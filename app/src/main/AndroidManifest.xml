@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.scribbler">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Scribbler">
+        <activity android:name=".HomePage"></activity>
+        <activity
+            android:name=".Explore"
+            android:label="Explore"
+            android:theme="@style/Theme.Scribbler.inside" />
+        <activity android:name=".createPost"
+            android:label="Post Something"
+            android:theme="@style/Theme.Scribbler.inside"/>
+        <activity android:name=".profile" />
+        <activity android:name=".dashboard" />
+        <activity android:name=".Intrests" />
+        <activity android:name=".showPostIntrest" />
+        <activity android:name=".login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register" />
+        <activity
+            android:name=".scribblerAdmin.AdminDashboardActivity"
+            android:theme="@style/Theme.Scribbler" />
+        <activity android:name=".scribblerAdmin.ManageCategoryActivity" />
+        <activity android:name=".scribblerAdmin.EditCategoryActivity" />
+        <activity
+            android:name=".scribblerAdmin.ViewCategoryActivity"
+            android:label="View Category"
+            android:theme="@style/Theme.Scribbler.inside" />
+        <activity
+            android:name=".scribblerAdmin.AddCategoryActivity"
+            android:label="Add Category"
+            android:theme="@style/Theme.Scribbler.inside" />
+        <activity android:name=".RecyclerViewDB" />
+        <activity android:name=".RecyclerViewDBnav" />
+
+        <activity android:name=".Detailed_Page" />
+    </application>
+
+</manifest>
